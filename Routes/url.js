@@ -1,16 +1,17 @@
 const express = require("express");
 const router = express.Router();
+
 const {
-    handelGenerateShoerURL,
-    hendleShortidurl,
+    handelGenerateShortURL,
 } = require("../controller/url")
 
 
 
 // now here we going to start to making the router 
 
-router.post("/", handelGenerateShoerURL);
-router.get("/:smallId", hendleShortidurl);
+router.post("/", handelGenerateShortURL);
 
 
-module.exports = router
+
+
+module.exports = router;
